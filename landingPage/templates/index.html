@@ -1,0 +1,207 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="{% static '../static/css/style.css' %}">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pack-it</title>
+</head>
+<body>
+
+  <!-- This is the header section -->
+  <section id="header">
+    <!-- This is the navbar -->
+  <nav class="navbar">
+    <div class="container flex">
+        <h1 class="site-brand">Pack-it<h1>
+        <button type="button" id="navbar-show-btn"><i class="fas fa-bars"></i></button>
+        <div id="navbar-collapse">
+          <button type="button" id="navbar-close-btn" class="flex"><i class="fas fa-times"></i></button>
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a href="#" class="nav-link">Home</a>
+            </li>
+            <li class="nav-item">
+              <a href="#features" class="nav-link">Why us?</a>
+            </li>
+            <li class="nav-item">
+              <a href="#pricing" class="nav-link">Pricing</a>
+            </li>
+            <li class="nav-item">
+              <a href="#facilities" class="nav-link">Facilities</a>
+            </li>
+            <li class="nav-item">
+              <a href="#contact" class="nav-link">Contact</a>
+            </li>
+          </ul>
+        </div>
+    </div>
+  </nav>
+    <div class="fluid-container">
+      <div class="px-4 py-5 my-5 text-center">
+          <h1 class="header-title">Store With Joy</h1>
+          <div class="col-lg-6 mx-auto">
+            <p class="lead mb-4 descr">
+              Welcome to Pack-it, the leading storage company in South Africa. We are committed to providing top-notch storage solutions to our valued customers throughout the country. We understand that finding a safe and secure place to store your belongings can be a daunting task, which is why we strive to make the process as stress-free and enjoyable as possible.
+            </p>
+            <button type="button" class="btn-contact">Contact Us</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- This is the features section -->
+  <section id="features">
+    <div class="fluid-container py-5">
+      <h2 class="pb-2 text-center">Why Store With Us?</h2>
+      <div class="row mt-4 px-5">
+        <div class="col-sm-4 text-center justify-content-sm-center">
+          <img height="50px" class="fs-2 mb-3" src="{% static '../static/images/reliability.svg' %}" alt="">
+          <h3 class="fs-2">Reliability</h3>
+          <p>
+            Our team of storage experts is always on hand to provide guidance and support to ensure that your storage needs are met.
+          </p>
+        </div>
+        <div class="col-sm-4 text-center justify-content-sm-center">
+          <img height="50px" class="fs-2 mb-3" src="{% static '../static/images/secure.svg' %}" alt="">
+          <h3 class="fs-2">Security</h3>
+          <p>
+              Our state-of-the-art facilities are equipped with the latest security features to keep your belongings safe and secure.
+          </p>
+        </div>
+        <div class="col-sm-4 text-center justify-content-sm-center">
+          <img height="50px" class="fs-2 mb-3" src="{% static '../static/images/customer service.svg' %}" alt="">
+          <h3 class="fs-2">Customer Service</h3>
+          <p>
+              Our friendly and knowledgeable staff are always available to answer your questions and provide assistance whenever you need it.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- This is the pricing section -->
+  <section id="pricing">
+    <div class="fluid-container py-5">
+      <h2 class="pb-2 text-center">Our Pricing</h2>
+      <div class="row mt-4 px-5">
+        <div class="col-lg-4 col-md-12 mb-4">
+          <div class="card h-100 shadow-lg">
+            <div class="card-body">
+              <div class="text-center p-3">
+                <h5 class="card-title">One Unit</h5>
+                <br><br>
+                <span class="h2">R500</span>/month
+                <br><br>
+              </div>
+              <p class="card-text">This unit is capable of containing all the belongings of a studio apartment. It has enough space to store all the necessary items without taking up too much room.</p>
+            </div>
+            <div class="card-body text-center">
+              <button class="btn btn-outline-primary btn-lg" style="border-radius:30px">Select</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-12 mb-4">
+          <div class="card h-100 shadow-lg">
+            <div class="card-body">
+              <div class="text-center p-3">
+                <h5 class="card-title">Two Units</h5>
+                <br><br>
+                <span class="h2">R850</span>/month
+                <br><br>
+              </div>
+              <p class="card-text">This unit has a spacious interior that can accommodate all the furniture and belongings of a one-bedroom flat, without overcrowding the space.</p>
+            </div>
+            <div class="card-body text-center">
+              <button class="btn btn-outline-primary btn-lg" style="border-radius:30px">Select</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-12 mb-4">
+          <div class="card h-100 shadow-lg">
+            <div class="card-body">
+              <div class="text-center p-3">
+                <h5 class="card-title">Three Units</h5>
+                <br><br>
+                <span class="h2">R1300</span>/month
+                <br><br>
+              </div>
+              <p class="card-text">This unit is large enough to comfortably accommodate all the furniture and belongings of a two to three bedroom house, as well as outdoor items.</p>
+            </div>
+            <div class="card-body text-center">
+              <button class="btn btn-outline-primary btn-lg" style="border-radius:30px">Select</button>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- This is our facilities section -->
+  <section id="facilities">
+    <div class="fluid-container py-5">
+      <div class="row mt-4 px-5">
+        <div class="col-lg-4 col-md-12 mb-4">
+          <div class="text-center p-3">
+            <h5 class="card-title">One Unit</h5>           
+          </div>
+          <img class="fluid-img" height="250px" src="{% static '../static/images/storage_1.jpg' %}" alt=""> 
+        </div>
+        <div class="col-lg-4 col-md-12 mb-4">
+          <div class="text-center p-3">
+            <h5 class="card-title">Two Units</h5>           
+          </div>
+          <img class="fluid-img" height="250px" src="{% static '../static/images/storage_2.webp' %}" alt=""> 
+        </div>
+        <div class="col-lg-4 col-md-12 mb-4">
+          <div class="text-center p-3">
+            <h5 class="card-title">Three Units</h5>            
+          </div>
+          <img class="fluid-img" height="250px" src="{% static '../static/images/storage_3.webp' %}" alt="">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- This is the contact section -->
+  <section id="contact">
+    <div class="fluid-container py-5">
+      <h2 class="pb-2 text-center">Contact Us</h2>
+      <div class="row mt-4 px-5">
+        <center>
+        <div class="col-sm-5 justify-content-sm-center">
+          <p>
+            <form action="">
+              <input type="text" class="form-control" placeholder="Enter your name..." required>
+              <input type="email" class="form-control" placeholder="Enter your email..." required>
+              <textarea name="message" class="form-control" placeholder="Enter your message..." id="" cols="50" rows="10" required></textarea>
+              <button class="btn-submit btn">Submit</button>
+            </form>
+          </p>
+        </div>
+        </center>
+      </div>
+    </div>
+  </section>
+
+  <section id="copyright">
+    <center>
+      <div class="col-sm-12 justify-content-sm-center">
+        <p>@20{{ now|date:"y" }} Nhlosokuhle Bandile Khoza</p>
+      </div>
+    </center>
+  </section>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+  <!-- js -->
+  <script src="{% static '../static/js/script.js' %}"></script>
+</body>
+</html>
+
